@@ -171,3 +171,7 @@ body {
   color: #fce000;
   transition: all 0.3s ease 0s;
 }
+
+.drag {
+  touch-action: none;
+}
