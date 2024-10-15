@@ -26,6 +26,7 @@ document.addEventListener("touchstart", function (e) {
 });
 
 let currentDroppable = null;
+let lastY = 1;
 document.addEventListener("touchmove", function (e) {
   if (!elem) return;
   moveAt(e);
@@ -41,7 +42,14 @@ document.addEventListener("touchmove", function (e) {
   if (currentDroppable != droppableBelow) {
     currentDroppable = droppableBelow;
   }
-  e.preventDefault();
+
+  
+  let lastS = document.documentElement.scrollTop;
+  if (lastS == 0 && (lastY - e.touches[0].clientY) < 0 && e.cancelable) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+  lastY = e.touches[0].clientY;
 });
 
 document.addEventListener("touchend", function (e) {
