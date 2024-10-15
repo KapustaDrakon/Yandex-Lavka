@@ -50,7 +50,7 @@ document.addEventListener("touchmove", function (e) {
     e.stopPropagation();
   }
   lastY = e.touches[0].clientY;
-});
+}, {passive: false});
 
 document.addEventListener("touchend", function (e) {
   if (!elem) return;
