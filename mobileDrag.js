@@ -22,7 +22,6 @@ document.addEventListener("touchstart", function (e) {
   elem.style.height = e.target.naturalHeight + "px";
   document.body.appendChild(elem);
   moveAt(e);
-  e.preventDefault();
 });
 
 let currentDroppable = null;
@@ -69,5 +68,4 @@ document.addEventListener("touchend", function (e) {
     button.style.visibility = "visible";
   }
   elem.style.zIndex = 0;
-  e.preventDefault();
 });
