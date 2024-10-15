@@ -1,0 +1,173 @@
+@font-face {
+  font-family: "YS Text Medium";
+  src: url("font/YS\ Text\ Medium\ Regular.ttf");
+}
+
+body {
+  font-family: "YS Text Medium";
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 44px 140px 44px;
+  margin: auto;
+  height: 100vh;
+  min-width: 300px;
+  min-height: 600px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 211px;
+  width: inherit;
+
+  position: relative;
+}
+
+.shop {
+  min-width: 211px;
+  min-height: 431px;
+  width: 70%;
+  height: 72%;
+  position: relative;
+}
+
+.shop__store {
+  min-width: 211px;
+  min-height: 431px;
+  width: 100%;
+  height: 100%;
+}
+
+.shop__bottle {
+  width: 17.5%;
+  height: 29%;
+  position: absolute;
+  top: -1%;
+  left: 10%;
+}
+
+.shop__milk {
+  width: 17.5%;
+  height: 21%;
+  position: absolute;
+  top: 7%;
+  left: 30%;
+}
+
+.shop__jam {
+  width: 22%;
+  height: 9.5%;
+  position: absolute;
+  top: 18.5%;
+  left: 49%;
+}
+
+.shop__cheese {
+  width: 17%;
+  height: 8%;
+  position: absolute;
+  top: 20.5%;
+  left: 75%;
+}
+
+.shop__meat {
+  width: 23%;
+  height: 11%;
+  position: absolute;
+  top: 39%;
+  left: 3.3%;
+  transform: rotate(5.5deg);
+}
+
+.shop__chicken {
+  width: 28.5%;
+  height: 13.6%;
+  position: absolute;
+  top: 39%;
+  left: 27%;
+}
+
+.shop__chips {
+  width: 36%;
+  height: 11%;
+  position: absolute;
+  top: 41%;
+  left: 61%;
+}
+
+.shop__pineapple {
+  width: 16.5%;
+  height: 17%;
+  position: absolute;
+  top: 55%;
+  left: 6.1%;
+}
+
+.shop__banana {
+  width: 22%;
+  height: 11%;
+  position: absolute;
+  top: 61.6%;
+  left: 27.5%;
+}
+
+.shop__apple {
+  width: 15%;
+  height: 8.5%;
+  position: absolute;
+  top: 64%;
+  left: 54.4%;
+}
+
+.shop__onion {
+  width: 29.5%;
+  height: 12%;
+  position: absolute;
+  top: 61%;
+  left: 74%;
+}
+
+.shopping-cart {
+  min-width: 276px;
+  min-height: 228px;
+  max-width: 300px;
+
+  width: 92%;
+  height: auto;
+  z-index: 2;
+
+  position: absolute;
+  bottom: -140px;
+}
+
+.button-pay {
+  position: absolute;
+  bottom: -120px;
+  border: none;
+  border-radius: 16px;
+  background-color: #fce000;
+  color: #21201f;
+  width: 174px;
+  height: 56px;
+  line-height: 17px;
+  font-size: 16px;
+  font-family: "YS Text Medium";
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  visibility: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.button-pay:hover {
+  background-color: #21201f;
+  color: #fce000;
+  transition: all 0.3s ease 0s;
+}
